@@ -5,11 +5,11 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <main className="w-full relative overflow-x-clip h-[500vh]">
+      <main className="w-full relative z-10 overflow-x-clip h-[500vh]">
         <TopFlag />
         <Stickylogo />
         <div
-          className=" h-full pt-16  max-w-7xl mx-auto 
+          className="relative h-full pt-16 z-20  max-w-7xl mx-auto 
         border-l border-r flex flex-col gap-24 "
         >
           <Herosection />

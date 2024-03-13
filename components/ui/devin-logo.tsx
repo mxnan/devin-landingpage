@@ -1,9 +1,12 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 
 const Devinlogo = () => {
   return (
-    <div className="rounded-full p-1">
-      <svg
+    <motion.div className="rounded-full p-1">
+      <motion.svg
         className=" rounded-full "
         width="90"
         height="80"
@@ -55,8 +58,8 @@ const Devinlogo = () => {
           d="M25.02 64.7381V70.9493L18.9214 74.3523C27.1861 75.1596 27.1861 77.0513 31.5072 83.9828V77.7716L37.9186 74.3604C29.2711 74.3604 29.2711 72.4688 25.02 64.7381Z"
           fill="black"
         />
-      </svg>
-    </div>
+      </motion.svg>
+    </motion.div>
   );
 };
 
