@@ -23,17 +23,23 @@ export default function TopFlag() {
 
   return (
     <motion.div
-      className={`fixed w-full top-0 h-10 border-b border-gray-900 ${
+      className={`fixed w-full top-0 h-10 border-b dark:border-gray-200 border-gray-900 ${
         isVisible ? "" : "hidden"
       }`}
       initial={{ opacity: 0 }}
       animate={{ opacity: isVisible ? 1 : 0 }}
       transition={{ duration: 0.5, type: "spring" }}
     >
-      <div className="fixed flex flex-col left-4 top-20">
+      <div className="flex h-full items-center justify-center">
+        <p className="flex items-center text-sm gap-2">
+          Elevated by $21M Series-A, led by Founders Fund. Dive in.{" "}
+          <a className="font-semibold">Learn more twitter link</a>
+        </p>
+      </div>
+
+      <div className="fixed flex-1 left-4 top-20">
         <ToggleTheme />
-        <div>X</div>
-        <div>L</div>
+        
       </div>
     </motion.div>
   );

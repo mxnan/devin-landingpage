@@ -1,15 +1,17 @@
-import { TopFlag } from "@/components/sections";
-
+import { Herosection, Stickylogo, TopFlag } from "@/components/sections";
 
 import React from "react";
 
 export default function page() {
   return (
     <>
-      <main className="w-full relative h-[500vh]">
+      <main className="w-full relative overflow-x-clip h-[500vh]">
         <TopFlag />
-
-        <div className="mt-10  h-full max-w-7xl mx-auto "></div>
+        <Stickylogo />
+        <div className="mt-10 h-full w-full  flex flex-col gap-24 max-w-7xl mx-auto ">
+          <Herosection />
+          <div className="h-[100vh]"></div>
+        </div>
       </main>
     </>
   );
