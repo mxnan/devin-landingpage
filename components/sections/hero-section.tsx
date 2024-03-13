@@ -30,16 +30,16 @@ export default function Herosection() {
 
           <div className="flex flex-col gap-4 pb-4 border-b">
             {" "}
-            <p className="text-xl dark:font-extralight font-light flex flex-col gap-4">
+            <p className="text-xl dark:font-extralight capitalize font-light flex flex-col gap-4">
               {
-                " We're a compact team based in New York and the San Francisco Bay Area. "
+                " A compact team .  Based in New York and the San Francisco Bay Area. "
               }
             </p>
             <Button
               variant={"default"}
               className="w-max border font-semibold flex-1 "
             >
-              Come Work with Us
+              Come work with us
             </Button>
           </div>
         </div>
