@@ -9,7 +9,7 @@ export default function page() {
       <main className="w-full relative h-[500vh]">
         <TopFlag />
 
-        <div className="mt-10 h-screen max-w-7xl mx-auto "></div>
+        <div className="mt-10  h-full max-w-7xl mx-auto "></div>
       </main>
     </>
   );
