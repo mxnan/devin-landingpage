@@ -1,13 +1,15 @@
-import { ToggleTheme } from "@/components/ui/ToggleTheme";
+import { TopFlag } from "@/components/sections";
+
+
 import React from "react";
 
 export default function page() {
   return (
     <>
-      <main>
-        <section className="w-full h-screen flex items-center justify-center text-9xl ">
-          <ToggleTheme />
-        </section>
+      <main className="w-full relative h-[500vh]">
+        <TopFlag />
+
+        <div className="mt-10 h-screen max-w-7xl mx-auto "></div>
       </main>
     </>
   );
