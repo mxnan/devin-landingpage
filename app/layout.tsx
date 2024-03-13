@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
 import { ThemeProvider } from "./providers";
 
-const inter = Inter({ subsets: ["latin"] });
+// Define local font
+const myFont = localFont({
+  src: "/fonts/expressway.otf", // Path to your OTF font file
+  display: "swap",
+  variable: "--font-body",
+});
+
+const logoFont = localFont({
+  src: "/fonts/BebasNeue-Regular.otf", // Path to your OTF font file
+  display: "swap",
+  variable: "--font-logo",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,8 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-    
-      <body className={inter.className}>
+      <body className={`${myFont.variable} ${logoFont.variable}`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
