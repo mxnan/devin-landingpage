@@ -18,6 +18,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        "md": "800px",
+      },
       fontFamily: {
         body: ["var(--font-body)"],
         logo: ["var(--font-logo)"],
