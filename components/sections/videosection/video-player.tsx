@@ -11,7 +11,7 @@ export default function VideoPlayer() {
           <p className="text-6xl">Introducing Devin,</p>
           <p className="text-6xl text-end "> the first AI software engineer</p>
         </div>
-        <p className="text-2xl font-medium text-center">
+        <p className="text-3xl font-logo tracking-wider font-medium text-center">
           Meet Devin, the world’s first fully autonomous AI software engineer.
         </p>
         <div className="space-y-3">
@@ -25,7 +25,7 @@ export default function VideoPlayer() {
           </p>
         </div>
         <div className="space-y-3">
-          <p className="text-lg font-semibold">{"Devin's Capabilities : "}</p>
+          <p className="text-2xl font-logo tracking-wider">{"Devin's Capabilities : "}</p>
           <p className="text-lg font-normal">
             With our advances in long-term reasoning and planning, Devin can
             plan and execute complex engineering tasks requiring thousands of

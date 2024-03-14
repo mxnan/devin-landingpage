@@ -44,7 +44,7 @@ export default function Herosection() {
 
         <Button
           variant={"link"}
-          className="w-max h-max border px-4 pb-2 flex text-start gap-1  text-sm md:text-base tracking-wide   font-semibold "
+          className="w-max font-logo hover:border-foreground tracking-widest h-max border-2 px-4 pb-2 flex text-start gap-1 xl:text-xl text-sm md:text-base "
         >
           {" Hire Devin for engineering "} <br className="md:hidden" />{" "}
           <span className="max-md:hidden flex-1 pointer-events-none">
