@@ -1,4 +1,4 @@
-import { Herosection, Stickylogo, TopFlag } from "@/components/sections";
+import { Herosection, Performance, Stickylogo, TopFlag } from "@/components/sections";
 import VideoPlayer from "@/components/sections/videosection/video-player";
 
 import React from "react";
@@ -10,11 +10,12 @@ export default function page() {
         <TopFlag />
         <Stickylogo />
         <div
-          className="relative  pt-16 z-20 h-[500vh]  max-w-7xl mx-auto 
+          className="relative  pt-16 z-20   max-w-7xl mx-auto 
         border-l border-r flex flex-col gap-24 "
         >
           <Herosection />
           <VideoPlayer />
+          <Performance />
         </div>
       </main>
     </>

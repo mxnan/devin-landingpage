@@ -20,6 +20,8 @@ const config = {
     extend: {
       screens: {
         "md": "800px",
+        "xl": "1300px",
+        "2xl": "1800px",
       },
       fontFamily: {
         body: ["var(--font-body)"],
