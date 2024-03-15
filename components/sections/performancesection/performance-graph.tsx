@@ -26,19 +26,18 @@ const baranimation: Variants = {
   animate: {
     y: 0,
     transition: {
-      duration: 3,
+      delay: 0.2,
+      duration: 1.5,
       ease: "easeInOut",
       type: "tween",
-      staggerChildren: 0.5,
       staggerDirection: -1,
-      when: "beforeChildren",
     },
   },
 };
 
 export default function GraphContent() {
   return (
-    <div className="flex relative h-1/2 max-w-4xl mx-auto w-full">
+    <div className="flex max-md:hidden relative h-[50vh] max-w-4xl mx-auto w-full">
       <p className="font-logo text-3xl absolute top-10 right-5 text-background ">
         {"% Issues resolved"}
       </p>
@@ -81,12 +80,22 @@ export default function GraphContent() {
           animate="animate"
           className="h-[80%]  relative w-24 rounded-t-xl bg-background"
         >
-          <p className="font-logo text-3xl absolute -top-10 left-3 text-background">
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-3xl absolute -top-10 left-3 text-background"
+          >
             {"13.84%"}
-          </p>
-          <p className="font-logo text-2xl absolute bottom-1 right-6 text-foreground">
+          </motion.p>
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-2xl absolute bottom-3 right-6 text-foreground"
+          >
             Devin
-          </p>
+          </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
@@ -94,12 +103,22 @@ export default function GraphContent() {
           animate="animate"
           className="h-[49%] relative w-24 rounded-t-xl bg-background"
         >
-          <p className="font-logo text-3xl absolute -top-10 left-5 text-background">
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+          >
             {"4.80%"}
-          </p>
-          <p className="font-logo text-lg absolute bottom-1 right-5 text-foreground">
+          </motion.p>
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-lg absolute bottom-2 right-5 text-foreground"
+          >
             Claude 2
-          </p>
+          </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
@@ -107,12 +126,22 @@ export default function GraphContent() {
           animate="animate"
           className="h-[39%] relative w-24 rounded-t-xl bg-background"
         >
-          <p className="font-logo text-3xl absolute -top-10 left-5 text-background">
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+          >
             {"3.97%"}
-          </p>
-          <p className="font-logo text-base absolute bottom-1 right-5 text-foreground">
+          </motion.p>
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-base absolute bottom-2 right-5 text-foreground"
+          >
             llama 13b
-          </p>
+          </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
@@ -120,12 +149,22 @@ export default function GraphContent() {
           animate="animate"
           className="h-[29%] relative w-24 rounded-t-xl bg-background"
         >
-          <p className="font-logo text-3xl absolute -top-10 left-5 text-background">
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+          >
             {"3.01%"}
-          </p>
-          <p className="font-logo text-base absolute bottom-1 right-6 text-foreground">
+          </motion.p>
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-base absolute bottom-1 right-6 text-foreground"
+          >
             llama 7b
-          </p>
+          </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
@@ -133,12 +172,22 @@ export default function GraphContent() {
           animate="animate"
           className="h-[16%] relative w-24 rounded-t-xl bg-background"
         >
-          <p className="font-logo text-3xl absolute -top-10 left-5 text-background">
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+          >
             {"1.74%"}
-          </p>
-          <p className="font-logo text-base absolute bottom-1 right-8 text-foreground">
+          </motion.p>
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-base absolute bottom-1 right-8 text-foreground"
+          >
             gpt-4
-          </p>
+          </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
@@ -146,15 +195,26 @@ export default function GraphContent() {
           animate="animate"
           className="h-[9%] relative w-24 rounded-t-xl bg-background"
         >
-          <p className="font-logo text-3xl absolute -top-10 left-5 text-background">
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+          >
             {"0.52%"}
-          </p>
-          <p className="font-logo text-sm absolute bottom-1 right-8 text-foreground">
+          </motion.p>
+          <motion.p
+            variants={baranimation}
+            initial="initial"
+            animate="animate"
+            className="font-logo text-sm absolute bottom-1 right-8 text-foreground"
+          >
             gpt-3.5
-          </p>{" "}
+          </motion.p>{" "}
         </motion.div>
       </div>
       {/* all graph bars container */}
+
     </div>
   );
 }
