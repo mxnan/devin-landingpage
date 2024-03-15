@@ -1,9 +1,5 @@
-import {
-  Herosection,
-  Performance,
-  Stickylogo,
-  TopFlag,
-} from "@/components/sections";
+import { Herosection, Stickylogo, TopFlag } from "@/components/sections";
+import Performance from "@/components/sections/performancesection/performance";
 import VideoPlayer from "@/components/sections/videosection/video-player";
 
 import React from "react";
