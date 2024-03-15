@@ -1,4 +1,4 @@
-import { Herosection, Stickylogo, TopFlag } from "@/components/sections";
+import { Footer, Herosection, Stickylogo, TopFlag } from "@/components/sections";
 import Performance from "@/components/sections/performancesection/performance";
 import VideoPlayer from "@/components/sections/videosection/video-player";
 
@@ -17,6 +17,7 @@ export default function page() {
           <Herosection />
           <VideoPlayer />
           <Performance />
+          <Footer />
         </div>
       </main>
     </>

@@ -1,13 +1,16 @@
 import React from "react";
-import Graphsvg from "./graph-svg";
+import GraphContent from "./performance-graph";
 
 export default function Performance() {
   return (
-    <div className="flex w-full h-[100vh] max-w-6xl mx-auto ">
-      
-      <div className="flex overflow-clip max-w-5xl mx-auto h-max rounded-3xl ">
-        <Graphsvg />
+    <div className="w-full h-[100vh] px-2 max-w-6xl space-y-20 mx-auto ">
+      <div className="w-full flex flex-col items-center justify-center pt-6 border-t">
+        <p className="text-5xl font-logo">
+          real world software engineering performance
+        </p>
+        <p className="text-3xl font-logo">[SWE-Bench]</p>
       </div>
+      <GraphContent />
     </div>
   );
 }
