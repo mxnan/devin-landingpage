@@ -76,6 +76,15 @@ export default function GraphContent() {
       <div className="flex items-end gap-10 px-6 w-full h-full bg-foreground overflow-hidden rounded-3xl">
         <motion.div
           variants={baranimation}
+          whileHover={{
+            background: "linear-gradient(to top, aqua 0%, transparent 100%)",
+
+            transition: {
+              duration: 1,
+              ease: "easeInOut",
+              type: "spring",
+            },
+          }}
           initial="initial"
           animate="animate"
           className="h-[80%]  relative w-24 rounded-t-xl bg-background"
@@ -92,13 +101,21 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-2xl absolute bottom-3 right-6 text-foreground"
+            className="font-logo text-2xl tracking-wide absolute bottom-3 text-center w-full  text-foreground"
           >
             Devin
           </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
+          whileHover={{
+            background: "linear-gradient(to top, green 0%, transparent 100%)",
+            transition: {
+              duration: 1,
+              ease: "easeInOut",
+              type: "spring",
+            },
+          }}
           initial="initial"
           animate="animate"
           className="h-[49%] relative w-24 rounded-t-xl bg-background"
@@ -115,13 +132,21 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-lg absolute bottom-2 right-5 text-foreground"
+            className="font-logo text-lg absolute bottom-2 text-center w-full  text-foreground"
           >
             Claude 2
           </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
+          whileHover={{
+            background: "linear-gradient(to top, green 0%, transparent 100%)",
+            transition: {
+              duration: 1,
+              ease: "easeInOut",
+              type: "spring",
+            },
+          }}
           initial="initial"
           animate="animate"
           className="h-[39%] relative w-24 rounded-t-xl bg-background"
@@ -138,13 +163,21 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-base absolute bottom-2 right-5 text-foreground"
+            className="font-logo text-base absolute bottom-2 text-center w-full  text-foreground"
           >
             llama 13b
           </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
+          whileHover={{
+            background: "linear-gradient(to top, green 0%, transparent 100%)",
+            transition: {
+              duration: 1,
+              ease: "easeInOut",
+              type: "spring",
+            },
+          }}
           initial="initial"
           animate="animate"
           className="h-[29%] relative w-24 rounded-t-xl bg-background"
@@ -161,13 +194,21 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-base absolute bottom-1 right-6 text-foreground"
+            className="font-logo text-base absolute bottom-1 text-center w-full text-foreground"
           >
             llama 7b
           </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
+          whileHover={{
+            background: "linear-gradient(to top, green 0%, transparent 100%)",
+            transition: {
+              duration: 1,
+              ease: "easeInOut",
+              type: "spring",
+            },
+          }}
           initial="initial"
           animate="animate"
           className="h-[16%] relative w-24 rounded-t-xl bg-background"
@@ -184,13 +225,21 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-base absolute bottom-1 right-8 text-foreground"
+            className="font-logo text-sm absolute bottom-1 text-center w-full  text-foreground"
           >
             gpt-4
           </motion.p>
         </motion.div>
         <motion.div
           variants={baranimation}
+          whileHover={{
+            background: "linear-gradient(to top, green 0%, transparent 100%)",
+            transition: {
+              duration: 1,
+              ease: "easeInOut",
+              type: "spring",
+            },
+          }}
           initial="initial"
           animate="animate"
           className="h-[9%] relative w-24 rounded-t-xl bg-background"
@@ -207,14 +256,22 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-sm absolute bottom-1 right-8 text-foreground"
+            className="font-logo text-sm absolute bottom-1 text-center w-full  text-foreground"
           >
             gpt-3.5
           </motion.p>{" "}
         </motion.div>
       </div>
       {/* all graph bars container */}
-
+      <p className=" absolute -bottom-14  left-1/2 -translate-x-1/2 font-medium text-center text-xs w-2/3 ">
+        {
+          "*Devin was evaluated on a random 25% subset of the dataset. Devin was unassisted,   "
+        }
+        {"  whereas all other models were assisted "}
+        {
+          "  (meaning the model was told exactly which files need to be edited)."
+        }
+      </p>
     </div>
   );
 }
