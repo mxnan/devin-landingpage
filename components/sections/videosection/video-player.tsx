@@ -14,30 +14,30 @@ export default function VideoPlayer() {
         <p className="text-3xl font-logo tracking-wider font-medium text-center">
           Meet Devin, the world’s first fully autonomous AI software engineer.
         </p>
-        <div className="space-y-3">
-          <p className="text-lg font-normal">
+        <div className="space-y-3 text-center w-3/4 mx-auto font-semibold">
+          <p className="text-xl ">
             Devin is a tireless, skilled teammate, equally ready to build
             alongside you or independently complete tasks for you to review.
           </p>
-          <p className="text-lg font-normal">
+          <p className="text-xl ">
             With Devin, engineers can focus on more interesting problems and
             engineering teams can strive for more ambitious goals.
           </p>
         </div>
-        <div className="space-y-3">
+        <div className="space-y-3 font-medium">
           <p className="text-2xl font-logo tracking-wider">{"Devin's Capabilities : "}</p>
-          <p className="text-lg font-normal">
+          <p className="text-lg ">
             With our advances in long-term reasoning and planning, Devin can
             plan and execute complex engineering tasks requiring thousands of
             decisions. Devin can recall relevant context at every step, learn
             over time, and fix mistakes.
           </p>
-          <p className="text-lg font-normal">
+          <p className="text-lg ">
             {
               "We've also equipped Devin with common developer tools including the shell, code editor, and browser within a sandboxed compute environment—everything a human would need to do their work."
             }
           </p>
-          <p className="text-lg font-normal">
+          <p className="text-lg ">
             {
               "Finally, we've given Devin the ability to actively collaborate with the user. Devin reports on its progress in real time, accepts feedback, and works together with you through design choices as needed."
             }

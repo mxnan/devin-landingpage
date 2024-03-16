@@ -5,16 +5,16 @@ export default function Herosection() {
   return (
     <div className="h-[90vh] w-full  flex items-center justify-center">
       <div className="flex flex-col pt-24 max-md:pt-52   max-md:px-2   gap-8 p-6 ">
-        <div className="flex flex-col pb-4 border-b gap-4">
-          <p className="text-2xl  font-base">We are ,</p>
-          <p className="text-3xl md:text-3xl font-base">Creators of Devin .</p>
+        <div className="flex flex-col font-medium pb-4 border-b gap-4">
+          <p className="text-2xl ">We are ,</p>
+          <p className="text-3xl md:text-3xl ">Creators of Devin .</p>
           <span></span>
         </div>
 
         <div className="flex flex-col  gap-6">
           <div className="flex flex-col gap-4 pb-4 border-b">
             {" "}
-            <p className="text-base md:text-lg dark:font-extralight font-light">
+            <p className="text-base md:text-lg dark:font-extralight font-medium">
               We are an applied AI lab focused on reasoning, and code is just
               the beginning.
             </p>
@@ -25,10 +25,9 @@ export default function Herosection() {
               Learn more here
             </Button>
           </div>
-
           <div className="flex flex-col gap-4 pb-4 border-b">
             {" "}
-            <p className="text-base md:text-lg dark:font-extralight capitalize font-light flex flex-col gap-4">
+            <p className="text-base md:text-lg dark:font-extralight capitalize font-medium">
               {
                 " A compact team .  Based in New York and the San Francisco Bay Area. "
               }

@@ -1,4 +1,5 @@
 import {
+  Aboutus,
   Footer,
   Herosection,
   Stickylogo,
@@ -22,7 +23,7 @@ export default function page() {
           <Herosection />
           <VideoPlayer />
           <Performance />
-          
+          <Aboutus />
           <Footer />
         </div>
       </main>
