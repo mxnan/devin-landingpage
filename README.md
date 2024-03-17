@@ -11,3 +11,9 @@ Stack used :
 -Framer-motion
 -Shadcn
 -Lucide-icons
+
+
+For free use 
+Contact for any queries : 
+
+https://twitter.com/home
