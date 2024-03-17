@@ -11,7 +11,7 @@ export default function VideoPlayer() {
           <p className="text-6xl">Introducing Devin,</p>
           <p className="text-6xl text-end "> the first AI software engineer</p>
         </div>
-        <p className="text-3xl font-logo tracking-wider font-medium text-center">
+        <p className="text-3xl font-logo pb-2 border-b-2 w-max mx-auto tracking-wider font-medium text-center">
           Meet Devin, the world’s first fully autonomous AI software engineer.
         </p>
         <div className="space-y-3 text-center w-3/4 mx-auto font-semibold">

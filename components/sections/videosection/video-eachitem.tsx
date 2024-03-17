@@ -15,7 +15,7 @@ export default function VideoEachItem({ item }: { item: VideoItemProps }) {
     xl:max-w-6xl xl:flex-row xl:justify-between
     "
     >
-      <div className=" flex flex-col px-4 xl:w-1/2 space-y-4 ">
+      <div className=" flex flex-col px-4 pb-4 border-b xl:w-1/2 space-y-4 ">
         <p className="text-2xl font-logo tracking-wide font-light ">{item.title}</p>
         <p className="text-lg font-medium">{item.description}</p>
       </div>

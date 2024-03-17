@@ -87,13 +87,13 @@ export default function GraphContent() {
           }}
           initial="initial"
           animate="animate"
-          className="h-[80%]  relative w-24 rounded-t-xl bg-background"
+          className="h-[80%]  relative w-28 rounded-t-xl bg-background"
         >
           <motion.p
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-3xl absolute -top-10 left-3 text-background"
+            className="font-logo text-3xl absolute -top-10 text-center w-full  text-background"
           >
             {"13.84%"}
           </motion.p>
@@ -124,7 +124,7 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+            className="font-logo text-3xl absolute -top-10 text-center w-full  text-background"
           >
             {"4.80%"}
           </motion.p>
@@ -155,7 +155,7 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+            className="font-logo text-3xl absolute -top-10 text-center w-full text-background"
           >
             {"3.97%"}
           </motion.p>
@@ -186,7 +186,7 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+            className="font-logo text-3xl absolute -top-10 text-center w-full  text-background"
           >
             {"3.01%"}
           </motion.p>
@@ -217,7 +217,7 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+            className="font-logo text-3xl absolute -top-10 text-center w-full  text-background"
           >
             {"1.74%"}
           </motion.p>
@@ -248,7 +248,7 @@ export default function GraphContent() {
             variants={baranimation}
             initial="initial"
             animate="animate"
-            className="font-logo text-3xl absolute -top-10 left-5 text-background"
+            className="font-logo text-3xl absolute -top-10 text-center w-full  text-background"
           >
             {"0.52%"}
           </motion.p>
