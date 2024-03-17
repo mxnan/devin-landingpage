@@ -34,7 +34,7 @@ const config = {
       },
       colors: {
         secondblack: "#0a0a0a",
-
+        secondwhite: "#F5F5F5",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
