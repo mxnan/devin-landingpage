@@ -18,7 +18,7 @@ export function ToggleTheme() {
   if (!mounted) return null;
 
   return (
-    <motion.div className="fixed top-20 left-4  flex items-center  ">
+    <motion.div className="flex items-center  ">
       {theme === "dark" ? (
         <motion.button
           animate={{
