@@ -16,7 +16,7 @@ export default function Performance() {
         className="w-full md:hidden h-full rounded-3xl shadow-2xl border"
       />
 
-      <p className="text-2xl py-4 text-center font-logo hover:underline underline-offset-4 font-medium">
+      <p className="text-2xl max-md:text-xl py-4 text-center font-logo hover:underline underline-offset-4 font-medium">
         {
           "We plan to publish a more detailed technical report soon — stay tuned for more details."
         }

@@ -5,10 +5,11 @@ import VideoText from "./video-texttop";
 
 export default function VideoPlayer() {
   return (
-    <div className="w-full space-y-16 ">
+    <div className="w-full space-y-16   ">
       <VideoText />
       <VideoPreview />
       <SecondaryVideoSection />
+      
     </div>
   );
 }

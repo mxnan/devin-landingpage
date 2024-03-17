@@ -26,17 +26,15 @@ export default function TopFlag() {
       bg-background text-foreground 
       max-md:text-center
        top-0 h-10 max-md:h-16 border-b z-50 
-       ${
-        isVisible ? "" : "hidden"
-      }`}
+       ${isVisible ? "" : "hidden"}`}
       initial={{ opacity: 0 }}
       animate={{ opacity: isVisible ? 1 : 0 }}
       transition={{ duration: 0.5, type: "spring" }}
     >
       <div className=" h-full  flex items-center shadow-lg justify-center">
-        <p className="flex max-md:flex-col items-center text-sm font-medium  gap-2">
-          Elevated by $21M Series-A, led by Founders Fund. Dive in.{" "}
-          <a className="font-semibold">Learn more twitter link</a>
+        <p className="flex max-md:flex-col items-center text-sm font-medium md:gap-2">
+          Elevated by $21M Series-A, led by Founders Fund. Dive in .
+          <a className="font-semibold text-blue-500">Learn more</a>
         </p>
       </div>
     </motion.div>
