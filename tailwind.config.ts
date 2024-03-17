@@ -24,6 +24,7 @@ const config = {
     },
     extend: {
       screens: {
+        sm:"550px",
         md: "800px",
         xl: "1300px",
         "2xl": "1800px",

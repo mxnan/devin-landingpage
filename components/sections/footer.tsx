@@ -13,8 +13,8 @@ export default function Footer() {
      mx-auto space-y-16 mb-12"
     >
       <motion.div className=" flex max-md:flex-col items-center justify-center gap-6">
-        <div className="flex items-center justify-center space-x-10">
-          <div className="xl:hidden">
+        <div className="flex items-center justify-center gap-1 space-x-10">
+          <div className="xl:hidden max-sm:hidden">
             <Devinlogo />
           </div>
           <p className=" text-4xl md:text-6xl whitespace-nowrap font-logo uppercase">
