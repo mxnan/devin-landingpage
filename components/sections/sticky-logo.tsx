@@ -26,7 +26,7 @@ export default function Stickylogo() {
     if (isStickyBottom) {
       controls.start({
          bottom: "4rem",
-         transition: { duration: 0.5 },
+         
          left: "50%",
     
     }); // Adjust the distance from the bottom as needed

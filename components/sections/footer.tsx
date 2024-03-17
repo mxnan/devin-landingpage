@@ -5,6 +5,8 @@ export default function Footer() {
     <div
       className="w-full max-w-6xl h-[40vh] p-6 flex flex-col bg-purple-700
      mx-auto"
-    ></div>
+    >
+      
+    </div>
   );
 }
