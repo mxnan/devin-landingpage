@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Aboutus() {
   return (
-    <div className="w-full h-max max-w-6xl  space-y-12 mx-auto">
+    <div className="w-full h-max max-w-6xl px-3  space-y-12 mx-auto">
       <div className="space-y-4">
         <p className="font-logo text-4xl">About Cognition</p>
         <p className="font-medium text-lg">

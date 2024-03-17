@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-
 export default function TopFlag() {
   const [scrollY, setScrollY] = useState(0);
   const [isVisible, setIsVisible] = useState(true);
@@ -23,7 +22,7 @@ export default function TopFlag() {
 
   return (
     <motion.div
-      className={`fixed w-full bg-background  top-0 h-10 border-b z-50 ${
+      className={`fixed w-full bg-background text-foreground  top-0 h-10 border-b z-50 ${
         isVisible ? "" : "hidden"
       }`}
       initial={{ opacity: 0 }}
@@ -36,7 +35,6 @@ export default function TopFlag() {
           <a className="font-semibold">Learn more twitter link</a>
         </p>
       </div>
-    
     </motion.div>
   );
 }
