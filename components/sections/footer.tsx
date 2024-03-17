@@ -4,6 +4,7 @@ import Devinlogo from "../ui/devin-logo";
 import { Linkedin } from "lucide-react";
 import { Twittericon } from "../ui";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -31,8 +32,14 @@ export default function Footer() {
 
         <p className="text-base font-medium">© 2024 Cognition AI</p>
       </motion.div>
-      <p className="text-sm font-medium text-center">
-        Developed by <a href="">@mxnan</a>
+      <p className="text-sm font-normal text-center">
+        Developed by{" "}
+        <a
+          className="font-semibold cursor-pointer"
+          onClick={() => window.open("https://github.com/mxnan")}
+        >
+          @mxnan
+        </a>
       </p>
     </div>
   );

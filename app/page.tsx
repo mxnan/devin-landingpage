@@ -13,11 +13,11 @@ import React, { useRef } from "react";
 export default function page() {
   return (
     <>
-      <main className="w-full relative  overflow-x-clip h-max dark:bg-[#0A0A0A] bg-slate-100 ">
+      <main className="w-full relative  overflow-x-clip h-max bg-background text-foreground   ">
         <TopFlag />
         <Stickylogo />
         <div
-          className="relative bg-background text-foreground pt-16 z-10  max-w-7xl mx-auto 
+          className="relative dark:bg-secondblack bg-[#F5F5F5] pt-16 z-10  max-w-7xl mx-auto 
         border-l border-r flex flex-col gap-24 "
         >
           <Herosection />
