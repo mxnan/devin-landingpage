@@ -13,7 +13,8 @@ Stack used :
 -Lucide-icons
 
 
-For free use 
+For free use ,
+
 Contact for any queries : 
 
 https://twitter.com/home
