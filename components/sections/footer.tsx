@@ -1,12 +1,13 @@
 import React from "react";
 
+
 export default function Footer() {
   return (
     <div
-      className="w-full max-w-6xl h-[40vh] p-6 flex flex-col bg-purple-700
+      className="w-full  h-[20vh] p-6 flex flex-col 
      mx-auto"
     >
-      
+    
     </div>
   );
 }

@@ -5,7 +5,7 @@ import SecondaryVideoSection from "./secondary-videosection";
 export default function VideoPlayer() {
   return (
     <div className="w-full space-y-16 ">
-      <div className="w-full max-w-6xl p-6 flex flex-col space-y-10 mx-auto">
+      <div className="w-full max-w-6xl p-6 flex flex-col space-y-16 mx-auto">
         <div className="py-3 space-y-4">
           {" "}
           <p className="text-6xl">Introducing Devin,</p>

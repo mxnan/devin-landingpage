@@ -1,4 +1,10 @@
-import { Aboutus, Footer, Herosection, TopFlag } from "@/components/sections";
+import {
+  Aboutus,
+  Footer,
+  Herosection,
+  Stickylogo,
+  TopFlag,
+} from "@/components/sections";
 import Performance from "@/components/sections/performancesection/performance";
 import VideoPlayer from "@/components/sections/videosection/video-player";
 
@@ -9,6 +15,8 @@ export default function page() {
     <>
       <main className="w-full relative z-10 overflow-x-clip h-full ">
         <TopFlag />
+
+        <Stickylogo />
 
         <div
           className="relative  pt-16 z-20   max-w-7xl mx-auto 

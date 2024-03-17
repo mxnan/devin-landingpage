@@ -2,8 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ToggleTheme } from "../ui";
-import { Stickylogo } from ".";
+
 
 export default function TopFlag() {
   const [scrollY, setScrollY] = useState(0);
@@ -37,7 +36,7 @@ export default function TopFlag() {
           <a className="font-semibold">Learn more twitter link</a>
         </p>
       </div>
-      <Stickylogo />
+    
     </motion.div>
   );
 }
