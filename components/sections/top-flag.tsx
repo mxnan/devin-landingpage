@@ -22,7 +22,11 @@ export default function TopFlag() {
 
   return (
     <motion.div
-      className={`fixed w-full bg-background text-foreground  top-0 h-10 border-b z-50 ${
+      className={`fixed w-full 
+      bg-background text-foreground 
+      max-md:text-center
+       top-0 h-10 max-md:h-16 border-b z-50 
+       ${
         isVisible ? "" : "hidden"
       }`}
       initial={{ opacity: 0 }}
@@ -30,7 +34,7 @@ export default function TopFlag() {
       transition={{ duration: 0.5, type: "spring" }}
     >
       <div className=" h-full  flex items-center shadow-lg justify-center">
-        <p className="flex items-center text-sm  gap-2">
+        <p className="flex max-md:flex-col items-center text-sm font-medium  gap-2">
           Elevated by $21M Series-A, led by Founders Fund. Dive in.{" "}
           <a className="font-semibold">Learn more twitter link</a>
         </p>
