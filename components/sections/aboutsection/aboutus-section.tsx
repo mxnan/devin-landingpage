@@ -26,8 +26,6 @@ const textvariants = {
       duration: 0.8,
       type: "spring",
       ease: "easeInOut",
-      damping: 50,
-      stiffness: 50,
     },
   },
 };

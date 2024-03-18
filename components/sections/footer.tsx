@@ -6,33 +6,74 @@ import { Twittericon } from "../ui";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
+const containervariants = {
+  animate: {
+    transition: {
+      staggerChildren: 0.3, // Adjust the stagger duration as needed
+    },
+  },
+};
+
+const textvariants = {
+  initial: {
+    opacity: 0,
+
+    y: 150,
+  },
+  animate: {
+    opacity: 1,
+
+    y: 0,
+    transition: {
+      duration: 1,
+      type: "spring",
+    },
+  },
+};
+
 export default function Footer() {
   return (
     <div
       className="w-full   p-6 flex flex-col 
      mx-auto space-y-16 mb-12"
     >
-      <motion.div className=" flex max-md:flex-col items-center justify-center gap-6">
+      <motion.div
+        variants={containervariants}
+        initial="initial"
+        animate="animate"
+        className=" flex max-md:flex-col items-center justify-center gap-6"
+      >
         <div className="flex items-center justify-center gap-1 space-x-10">
-          <div className="xl:hidden max-sm:hidden">
+          <motion.div
+            variants={textvariants}
+            className="xl:hidden max-sm:hidden"
+          >
             <Devinlogo />
-          </div>
-          <p className=" text-4xl md:text-6xl whitespace-nowrap font-logo uppercase">
+          </motion.div>
+          <motion.p
+            variants={textvariants}
+            className=" text-4xl md:text-6xl whitespace-nowrap font-logo uppercase"
+          >
             Cognition AI
-          </p>
-          <div className="flex gap-3">
+          </motion.p>
+          <motion.div variants={textvariants} className="flex gap-3">
             <div className="p-2 rounded-full  hover-transition hover:scale-110 transition-transform  border z-10">
               <Twittericon />
             </div>
             <div className="p-2 rounded-full  hover-transition hover:scale-110 transition-transform border z-10">
               <Linkedin size={28} strokeWidth={1} />
             </div>
-          </div>
+          </motion.div>
         </div>
 
-        <p className="text-base font-medium">© 2024 Cognition AI</p>
+        <motion.p variants={textvariants} className="text-base font-medium">
+          © 2024 Cognition AI
+        </motion.p>
       </motion.div>
-      <p className="text-sm font-normal text-center">
+      <motion.p
+        variants={textvariants}
+        className="text-sm font-normal text-center"
+      >
         Developed by{" "}
         <a
           className="font-semibold cursor-pointer"
@@ -40,7 +81,7 @@ export default function Footer() {
         >
           @mxnan
         </a>
-      </p>
+      </motion.p>
     </div>
   );
 }
