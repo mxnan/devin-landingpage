@@ -17,7 +17,7 @@ export default function page() {
         <TopFlag />
         <Stickylogo />
         <div
-          className="relative dark:bg-secondblack bg-secondwhite overflow-x-clip   pt-16 z-10  max-w-7xl mx-auto 
+          className="relative dark:bg-secondblack bg-secondwhite text-secondblack dark:text-secondwhite overflow-x-clip   pt-16 z-10  max-w-7xl mx-auto 
         border-l border-r flex flex-col  gap-24 "
         >
           <Herosection />
