@@ -15,13 +15,16 @@ const textvariants = {
   initial: {
     opacity: 0,
     y: -100,
+    x: 100,
   },
   animate: {
     opacity: 1,
+
+    x: 0,
     y: 0,
     transition: {
-      duration: 0.6,
-      type: "tween",
+      duration: 0.8,
+      type: "spring",
       ease: "easeInOut",
       damping: 50,
       stiffness: 50,

@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 export default function Stickylogo() {
   return (
-    <motion.div className="fixed flex items-center flex-col z-0 gap-4 left-6 top-1/2 -translate-y-1/2 ">
+    <motion.div className="fixed flex items-center flex-col z-0 gap-4 left-8 bottom-1/2 ">
       <Devinlogo />
       <p className="text-4xl font-logo uppercase">Cognition AI</p>
       <div className="p-2 rounded-full border hover-transition hover:scale-110 transition-transform z-10">
