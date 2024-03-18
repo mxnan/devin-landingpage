@@ -26,7 +26,7 @@ const baranimation: Variants = {
   animate: {
     y: 0,
     transition: {
-      delay: 0.2,
+      delay: 0.5,
       duration: 1.5,
       ease: "easeInOut",
       type: "tween",
