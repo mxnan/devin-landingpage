@@ -8,13 +8,10 @@ export default function SecondaryVideoSection() {
       <p className="font-medium text-center  w-max mx-auto  text-3xl font-logo  xl:text-3xl">
         {"Here's a sample of what Devin can do:"}
       </p>
-       <div className="w-full flex flex-col max-lg:items-center space-y-16">
-         {
-          VideoItems.map((item) => {
-            return <VideoEachItem item={item} key={item.id} />
-          })
-         }
-       </div>
+
+      {VideoItems.map((item) => {
+        return <VideoEachItem item={item} key={item.id} />;
+      })}
     </div>
   );
 }
