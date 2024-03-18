@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -56,7 +55,20 @@
   }
   body {
     @apply bg-background text-foreground border-zinc-600;
-    font-feature-settings: "rlig" 1, "calt" 1;
-    font-variation-settings: "wght" 400, "wdth" 100;
   }
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-foreground;
+}
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+::-webkit-scrollbar {
+  @apply w-2 h-2 rounded-xl;
+
+  @apply bg-transparent;
+}
+.dark::-webkit-scrollbar-button {
+  @apply bg-secondwhite;
 }
