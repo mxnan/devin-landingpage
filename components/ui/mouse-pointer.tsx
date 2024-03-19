@@ -1,7 +1,13 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useMotionValue,
+  useScroll,
+  useTransform,
+  useVelocity,
+} from "framer-motion";
 
 export default function Mouse() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -36,8 +42,8 @@ export default function Mouse() {
       timeoutRef.current = setTimeout(() => {
         mouseX.set(e.clientX);
         mouseY.set(e.clientY);
-        xScale.set(2);
-        yScale.set(2);
+        xScale.set(1);
+        yScale.set(1);
       }, 100);
     };
 
@@ -48,19 +54,32 @@ export default function Mouse() {
     };
   }, [mouseX, mouseY, xScale, yScale]);
 
+  // Use useVelocity to smooth the motion
+  const velocityX = useVelocity(mouseX);
+  const velocityY = useVelocity(mouseY);
+
   return (
     <motion.div
       ref={circleRef}
       className="fixed pointer-events-none z-[999]"
-    
       style={{
-        x: offsetX , // Use the offsetX value for the x position
+        x: offsetX, // Use the offsetX value for the x position
         y: offsetY, // Use the offsetY value for the y position
         scaleX: xScale,
         scaleY: yScale,
       }}
     >
-      <div className="w-4 h-4 rounded-full bg-[#2b2727] dark:bg-[#e0e0e0]" />
+      <motion.div
+        animate={{
+          x: 0,
+          y: 0,
+          transition: {
+            velocity: { x: velocityX, y: velocityY },
+            ease: [0.16, 1, 0.3, 1],
+          },
+        }}
+        className="w-4 h-4 rounded-full bg-[#2b2727] dark:bg-[#e0e0e0]"
+      />
     </motion.div>
   );
 }
