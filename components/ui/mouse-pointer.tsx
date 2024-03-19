@@ -8,6 +8,8 @@ import {
   useTransform,
   useVelocity,
 } from "framer-motion";
+import DevinlogoWhite from "./devinlogowhite";
+import Image from "next/image";
 
 export default function Mouse() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -26,8 +28,8 @@ export default function Mouse() {
     return Math.max(0.2, Math.min(2, 1 + diff / 200));
   });
 
-  const offsetX = useTransform(mouseX, (x) => x + 8); // Offset the x position by 20px
-  const offsetY = useTransform(mouseY, (y) => y + 8); // Offset the y position by 20px
+  const offsetX = useTransform(mouseX, (x) => x + 15); // Offset the x position by 20px
+  const offsetY = useTransform(mouseY, (y) => y + 15); // Offset the y position by 20px
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -75,10 +77,10 @@ export default function Mouse() {
           y: 0,
           transition: {
             velocity: { x: velocityX, y: velocityY },
-            ease: [0.16, 1, 0.3, 1],
           },
         }}
-        className="w-4 h-4 rounded-full bg-[#2b2727] dark:bg-[#e0e0e0]"
+        //
+        className="rounded-full w-6 h-6 bg-[#2b2727] dark:bg-[#e0e0e0]"
       />
     </motion.div>
   );
