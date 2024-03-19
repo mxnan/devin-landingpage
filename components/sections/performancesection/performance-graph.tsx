@@ -73,7 +73,7 @@ export default function GraphContent() {
       </span>
 
       {/* all graph bars container */}
-      <div className="flex items-end gap-10 px-6 w-full h-full bg-foreground overflow-hidden rounded-3xl">
+      <div className="flex items-end gap-10 px-6 w-full h-full dark:bg-secondwhite bg-secondblack overflow-hidden rounded-3xl">
         <motion.div
           variants={baranimation}
           whileHover={{
