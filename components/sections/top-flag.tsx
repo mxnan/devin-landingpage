@@ -23,7 +23,7 @@ export default function TopFlag() {
   return (
     <motion.div
       className={`fixed w-full 
-      bg-background text-foreground 
+      bg-light-gradient dark:bg-dark-gradient
       max-md:text-center
        top-0 h-10 max-md:h-16 border-b z-50 
        ${isVisible ? "" : "hidden"}`}

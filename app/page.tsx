@@ -13,11 +13,13 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <main className="w-full relative  h-max bg-background text-foreground  ">
+      <main className="w-full relative  h-max  bg-light-gradient dark:bg-dark-gradient text-foreground  ">
         <TopFlag />
         <Stickylogo />
         <div
-          className="relative dark:bg-secondblack bg-secondwhite text-secondblack dark:text-secondwhite overflow-x-clip   pt-16 z-10  max-w-7xl mx-auto 
+          className="relative 
+          
+          overflow-x-clip   pt-16 z-10  max-w-7xl mx-auto 
         border-l border-r flex flex-col  gap-24 "
         >
           <Herosection />
