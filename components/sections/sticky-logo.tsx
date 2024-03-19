@@ -10,7 +10,7 @@ import DevinlogoWhite from "../ui/devinlogowhite";
 
 export default function Stickylogo() {
   return (
-    <motion.div className="fixed flex items-center flex-col z-0 gap-4 left-8 bottom-1/2 ">
+    <motion.div className="fixed flex items-center flex-col z-0 gap-4 left-8 bottom-1/2 translate-y-1/2 ">
       
       <div className="dark:hidden ">
         <DevinlogoBlack />

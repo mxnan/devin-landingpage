@@ -18,9 +18,9 @@ export default function page() {
         <Stickylogo />
         <div
           className="relative 
-          
+          bg-container-light-gradient dark:bg-container-dark-gradient
           overflow-x-clip   pt-16 z-10  max-w-7xl mx-auto 
-        border-l border-r flex flex-col  gap-24 "
+        border-l border-r dark:border-zinc-900 border-stone-50 flex flex-col  gap-24 "
         >
           <Herosection />
           <VideoPlayer />

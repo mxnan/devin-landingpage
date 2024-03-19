@@ -71,7 +71,7 @@ export default function VideoEachItem({ item }: { item: VideoItemProps }) {
         </div>
         <motion.div
           variants={textvariants}
-          className="flex max-xl:w-full  max-xl:h-[30vh] xl:h-[30vh] shadow-xl rounded-3xl border-2  "
+          className="flex max-xl:w-full  max-xl:h-[30vh] xl:h-[30vh] shadow-2xl dark:border-zinc-900 border-stone-50 rounded-3xl border-2  "
         >
           <iframe
             className="z-10 aspect-auto 
