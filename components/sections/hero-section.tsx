@@ -14,9 +14,9 @@ const containervariants = {
 const textvariants = {
   initial: {
     opacity: 0,
-    x: 200,
-    y: -150,
-    scale: 1.5
+    x: 0,
+    y: -250,
+    scale: 1.4,
   },
   animate: {
     opacity: 1,
@@ -26,6 +26,7 @@ const textvariants = {
     transition: {
       duration: 1,
       type: "tween",
+      ease: "easeInOut",
     },
   },
 };
