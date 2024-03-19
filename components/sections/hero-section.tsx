@@ -14,13 +14,15 @@ const containervariants = {
 const textvariants = {
   initial: {
     opacity: 0,
-    x: 70,
-    y: -70,
+    x: 200,
+    y: -150,
+    scale: 1.5
   },
   animate: {
     opacity: 1,
     x: 0,
     y: 0,
+    scale: 1,
     transition: {
       duration: 1,
       type: "tween",

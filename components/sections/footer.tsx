@@ -5,6 +5,7 @@ import { Linkedin } from "lucide-react";
 import { Twittericon } from "../ui";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import DevinlogoWhite from "../ui/devinlogowhite";
 
 const containervariants = {
   animate: {
@@ -46,10 +47,17 @@ export default function Footer() {
         <div className="flex items-center justify-center gap-1 space-x-10">
           <motion.div
             variants={textvariants}
-            className="xl:hidden max-sm:hidden"
+            className="xl:hidden dark:hidden max-sm:hidden"
           >
             <Devinlogo />
           </motion.div>
+          <motion.div
+            variants={textvariants}
+            className="xl:hidden  max-sm:hidden"
+          >
+            <DevinlogoWhite />
+          </motion.div>
+        
           <motion.p
             variants={textvariants}
             className=" text-4xl md:text-6xl whitespace-nowrap font-logo uppercase"
