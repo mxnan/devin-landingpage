@@ -1,7 +1,10 @@
 
-Landing Page for Cognition AI
+Landing Page for Cognition AI . 
 
-Giving their website a new look . 
+Giving their website a new look . As i was not satisfied with the existing one .
+
+
+
 
 Stack used :
 
@@ -13,7 +16,10 @@ Stack used :
 -Lucide-icons
 
 
-For free use ,
+For free use , if you liked the project then please share and let this reach cognition labs team .
+
+
+
 
 Contact for any queries : 
 
