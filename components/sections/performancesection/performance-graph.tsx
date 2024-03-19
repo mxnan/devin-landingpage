@@ -106,6 +106,7 @@ export default function GraphContent() {
             Devin
           </motion.p>
         </motion.div>
+
         <motion.div
           variants={baranimation}
           whileHover={{

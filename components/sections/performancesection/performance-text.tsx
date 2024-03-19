@@ -1,6 +1,6 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 const containervariants = {
   animate: {
@@ -29,11 +29,17 @@ const textvariants = {
 };
 
 export default function Texttop() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { margin: "-30px" });
+  // for using animation each time inview
+
   return (
     <motion.div
-      variants={containervariants}
-      initial="initial"
-      animate="animate"
+    variants={containervariants}
+    ref={ref}
+    initial="initial"
+    //animate="animate"
+    animate={isInView ? "animate" : "initial"}
       className="space-y-10"
     >
       {" "}

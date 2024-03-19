@@ -1,8 +1,8 @@
 "use client";
 
 import TypewriterParagraph from "@/components/ui/typewriter-word";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 interface VideoItemProps {
   id: number;
@@ -36,12 +36,20 @@ const textvariants = {
 };
 
 export default function VideoEachItem({ item }: { item: VideoItemProps }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { margin: "-70px" });
+  // for using animation each time inview
+
   return (
-    <div className="w-full flex flex-col max-lg:items-center space-y-16">
+    <div
+      ref={ref}
+      className="w-full flex flex-col max-lg:items-center space-y-16"
+    >
       <motion.div
         variants={containervariants}
         initial="initial"
-        animate="animate"
+        //animate="animate"
+        animate={isInView ? "animate" : "initial"}
         className="flex flex-col w-full max-xl:max-w-2xl  max-xl:space-y-10 mx-auto items-center justify-center
     xl:max-w-6xl xl:flex-row xl:justify-between
     "

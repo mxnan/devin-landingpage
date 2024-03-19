@@ -1,12 +1,12 @@
 "use client";
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import TypewriterParagraph from "@/components/ui/typewriter-word";
 
 const containervariants = {
   animate: {
     transition: {
-      staggerChildren: 0.6, // Adjust the stagger duration as needed
+      staggerChildren: 0.3, // Adjust the stagger duration as needed
     },
   },
 };
@@ -14,28 +14,33 @@ const textvariants = {
   initial: {
     opacity: 0,
 
-    y: -100,
+    y: -80,
   },
   animate: {
     opacity: 1,
 
     y: 0,
+
     transition: {
       duration: 1,
       type: "tween",
       ease: "easeInOut",
-      damping: 80,
-      stiffness: 50,
     },
   },
 };
 
 export default function VideoText() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { margin: "-80px" });
+  // for using animation each time inview
+
   return (
     <motion.div
       variants={containervariants}
+      ref={ref}
       initial="initial"
-      animate="animate"
+      //animate="animate"
+      animate={isInView ? "animate" : "initial"}
       className="w-full max-w-6xl p-6 pb-12 border-b flex flex-col space-y-16 mx-auto"
     >
       <motion.div

@@ -1,8 +1,8 @@
 "use client";
 
-import React from "react";
+import React, { useRef } from "react";
 import { Button, Rightarrow } from "../ui";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const containervariants = {
   animate: {
@@ -29,12 +29,18 @@ const textvariants = {
 };
 
 export default function Herosection() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { margin: "-50px" });
+  // for using animation each time inview
+
   return (
     <div className="h-[90vh] w-full  flex items-center justify-center">
       <motion.div
         variants={containervariants}
+        ref={ref}
         initial="initial"
-        animate="animate"
+        //animate="animate"
+        animate={isInView ? "animate" : "initial"}
         className="flex flex-col pt-24 max-md:pt-36 max-md:items-center max-md:text-center max-md:px-8   gap-12 p-6 "
       >
         <motion.div

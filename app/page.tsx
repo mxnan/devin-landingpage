@@ -13,7 +13,7 @@ import React from "react";
 export default function page() {
   return (
     <>
-      <main className="w-full relative  h-max bg-background text-foreground   ">
+      <main className="w-full relative  h-max bg-background text-foreground  ">
         <TopFlag />
         <Stickylogo />
         <div

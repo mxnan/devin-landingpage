@@ -5,6 +5,7 @@ import Texttop from "./performance-text";
 import TypewriterParagraph from "@/components/ui/typewriter-word";
 
 export default function Performance() {
+  
   return (
     <div className="w-full h-full  px-2 max-w-6xl pb-4 border-b space-y-20 max-md:space-y-16 mx-auto ">
       <Texttop />
@@ -24,7 +25,7 @@ export default function Performance() {
           text={
             "We plan to publish a more detailed technical report soon — stay tuned for more details."
           }
-          delay={0.2}
+          delay={0.4}
           speed={0.2}
         />
       </div>
