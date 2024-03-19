@@ -42,7 +42,7 @@ export default function Footer() {
         variants={containervariants}
         initial="initial"
         animate="animate"
-        className=" flex max-md:flex-col items-center justify-center gap-6"
+        className=" flex flex-col items-center justify-center gap-6"
       >
         <div className="flex items-center justify-center gap-1 space-x-10">
           <motion.div
@@ -53,24 +53,29 @@ export default function Footer() {
           </motion.div>
           <motion.div
             variants={textvariants}
-            className="xl:hidden  max-sm:hidden"
+            className="dark:xl:hidden dark:inline dark:max-sm:hidden hidden "
           >
             <DevinlogoWhite />
           </motion.div>
-        
           <motion.p
             variants={textvariants}
-            className=" text-4xl md:text-6xl whitespace-nowrap font-logo uppercase"
+            className=" text-4xl md:text-6xl  whitespace-nowrap font-logo uppercase"
           >
             Cognition AI
-          </motion.p>
-          <motion.div variants={textvariants} className="flex gap-3">
-            <div className="p-2 rounded-full  hover-transition hover:scale-110 transition-transform  border z-10">
-              <Twittericon />
-            </div>
-            <div className="p-2 rounded-full  hover-transition hover:scale-110 transition-transform border z-10">
-              <Linkedin size={28} strokeWidth={1} />
-            </div>
+          </motion.p>{" "}
+          <motion.div
+            variants={textvariants}
+            className="flex flex-col items-center justify-center gap-8 mr-8"
+          >
+            <div className="flex gap-2">
+              {" "}
+              <div className="p-2 w-max rounded-full  hover-transition hover:scale-110 transition-transform  border-2 z-10">
+                <Twittericon />
+              </div>
+              <div className="p-2 w-max rounded-full  hover-transition hover:scale-110 transition-transform border-2 z-10">
+                <Linkedin size={28} strokeWidth={1} />
+              </div>
+            </div>{" "}
           </motion.div>
         </div>
 
