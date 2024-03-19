@@ -7,6 +7,7 @@ import {
 import Aboutus from "@/components/sections/aboutsection/aboutus-section";
 import Performance from "@/components/sections/performancesection/performance";
 import VideoPlayer from "@/components/sections/videosection/video-player";
+import Mouse from "@/components/ui/mouse-pointer";
 
 import React from "react";
 
@@ -14,6 +15,7 @@ export default function page() {
   return (
     <>
       <main className="w-full relative  h-max  bg-light-gradient dark:bg-dark-gradient text-foreground  ">
+        <Mouse />
         <TopFlag />
         <Stickylogo />
         <div

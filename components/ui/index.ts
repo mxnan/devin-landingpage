@@ -6,3 +6,4 @@ export * from "./right-arrow";
 export * from "./typewriter-word";
 export * from "./devinlogowhite";
 export * from "./devin-logo";
+export * from "./mouse-pointer";
