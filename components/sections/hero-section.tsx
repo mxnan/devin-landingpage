@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useRef } from "react";
-import { Button, Rightarrow } from "../ui";
+
 import { motion, useInView } from "framer-motion";
+import { Button } from "../ui/button";
+import { Rightarrow } from "../ui/right-arrow";
 
 const containervariants = {
   animate: {

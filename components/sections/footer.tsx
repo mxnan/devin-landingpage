@@ -2,10 +2,11 @@
 import React from "react";
 import Devinlogo from "../ui/devin-logo";
 import { Linkedin } from "lucide-react";
-import { Twittericon } from "../ui";
+
 import { motion } from "framer-motion";
-import Link from "next/link";
+
 import DevinlogoWhite from "../ui/devinlogowhite";
+import { Twittericon } from "../ui/twitter-icon";
 
 const containervariants = {
   animate: {

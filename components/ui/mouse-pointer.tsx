@@ -4,12 +4,9 @@ import React, { useEffect, useRef, useState } from "react";
 import {
   motion,
   useMotionValue,
-  useScroll,
   useTransform,
   useVelocity,
 } from "framer-motion";
-import DevinlogoWhite from "./devinlogowhite";
-import Image from "next/image";
 
 export default function Mouse() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -77,10 +74,11 @@ export default function Mouse() {
           y: 0,
           transition: {
             velocity: { x: velocityX, y: velocityY },
+            type: "spring",
           },
         }}
         //
-        className="rounded-full w-6 h-6 bg-[#2b2727] dark:bg-[#e0e0e0]"
+        className="rounded-full w-4 h-4 bg-[#2b2727] dark:bg-[#e0e0e0]"
       />
     </motion.div>
   );

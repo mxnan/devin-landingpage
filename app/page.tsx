@@ -1,14 +1,13 @@
 import {
+  Aboutus,
   Footer,
   Herosection,
+  Performance,
   Stickylogo,
   TopFlag,
+  VideoPlayer,
 } from "@/components/sections";
-import Aboutus from "@/components/sections/aboutsection/aboutus-section";
-import Performance from "@/components/sections/performancesection/performance";
-import VideoPlayer from "@/components/sections/videosection/video-player";
 import Mouse from "@/components/ui/mouse-pointer";
-
 import React from "react";
 
 export default function page() {
@@ -19,10 +18,13 @@ export default function page() {
         <TopFlag />
         <Stickylogo />
         <div
-          className="relative 
+          className="
+          relative pt-16 z-10  max-w-7xl mx-auto 
           bg-container-light-gradient dark:bg-container-dark-gradient
-          overflow-x-clip   pt-16 z-10  max-w-7xl mx-auto 
-        border-l border-r dark:border-zinc-900 border-stone-50 flex flex-col  gap-24 "
+          overflow-x-clip  
+          flex flex-col  gap-24 
+          border-l border-r dark:border-zinc-900 border-stone-50 
+           "
         >
           <Herosection />
           <VideoPlayer />

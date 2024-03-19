@@ -1,17 +1,18 @@
 "use client";
 
-import React, { useRef } from "react";
+import React from "react";
 
 import { Linkedin } from "lucide-react";
-import { ToggleTheme, Twittericon } from "../ui";
-import { motion, useScroll, useTransform } from "framer-motion";
+
+import { motion } from "framer-motion";
 import DevinlogoBlack from "../ui/devin-logo";
 import DevinlogoWhite from "../ui/devinlogowhite";
+import { Twittericon } from "../ui/twitter-icon";
+import { ToggleTheme } from "../ui/ToggleTheme";
 
 export default function Stickylogo() {
   return (
     <motion.div className="fixed flex items-center flex-col z-0 gap-4 left-8 bottom-1/2 translate-y-1/2 ">
-      
       <div className="dark:hidden ">
         <DevinlogoBlack />
       </div>
