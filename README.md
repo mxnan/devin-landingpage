@@ -39,4 +39,4 @@ For free use , if you liked the project then please share and let this reach cog
 
 Contact for any queries : 
 
-https://twitter.com/home
+[https://twitter.com/home](https://twitter.com/etc_etcx)https://twitter.com/etc_etcx
